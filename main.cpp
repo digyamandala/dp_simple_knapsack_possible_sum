@@ -20,8 +20,8 @@ void fillKnapsackTable(int weights[], int n_things, int max_capacity) {
     p[0][i] = true;
   }
 
-  for(int x = 1 ; x <= 12 ; x++) {
-    for(int k = 1 ; k <= 4 ; k++) {
+  for(int x = 1 ; x <= max_capacity ; x++) {
+    for(int k = 1 ; k <= n_things ; k++) {
       if(x - weights[k-1] >= 0) {
         p[x][k] = p[x-weights[k]][k-1] || p[x][k-1];
       }else {
