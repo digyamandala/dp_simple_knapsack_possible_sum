@@ -1,4 +1,4 @@
-# dp_simple_knapsack_weight_sum
+# dp_simple_knapsack_possible_sum
 
 Mark true if a bag with n kg capacity can be fully-filled
 with collection of things.
